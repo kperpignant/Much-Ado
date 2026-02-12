@@ -1,0 +1,10 @@
+# Render Blueprint - Much Ado
+# https://render.com/docs/blueprint-spec
+# Create a Static Site, add VITE_CONVEX_URL in Environment
+
+services:
+  - type: web
+    name: much-ado
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
